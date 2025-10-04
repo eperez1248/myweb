@@ -14,7 +14,7 @@
                 <a class="navbar-brand h1" href="{{ route('posts.index')}}">Aplicacion Post </a>
                 <div class="justify-end">
                     <div class="col">
-                        <a class="btn btn-sm btn-success"  href="{{ route ('posts.create')}}">Añadir Post</a>   
+                    <a class="btn btn-sm btn-success" href="{{ route('posts.create') }}">Añadir Post</a> 
                     </div>
                 </div>
             </div>
@@ -28,11 +28,11 @@
                         @method('PUT')
                         <div class="form-group">
                             <label for="title">Titulo</label>
-                            <input value={{$post->title}} type="text" class="form-control" name="title" id="title" required>
+                            <input value="{{$post->title}}" type="text" class="form-control" name="title" id="title" required>
                         </div>  
                         <div class="form-group">
                             <label for="body">Cuerpo</label>
-                            <textarea  class="form-control" name="body" id="body" rows="3" required> {{$post->title}}</textarea>
+                            <textarea  class="form-control" name="body" id="body" rows="3" required> {{ $post->body }} </textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Actualiza post</button>
 

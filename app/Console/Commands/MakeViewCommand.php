@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+
 use File;
 
 class MakeViewCommand extends Command
@@ -28,7 +29,7 @@ class MakeViewCommand extends Command
     {
         $view=$this->argument('view');
         $path = $this->viewPath($view);
-        $this->CreateDir($path);
+        $this->createDir($path);
         if (File::exists($path))
         {
             $this->error("El fichero {$path} existe");
@@ -38,7 +39,7 @@ class MakeViewCommand extends Command
         File::put($path,$path);
         $this->info("fichero {$path} creado");
     }
-    public function ViewPath($view){
+    public function viewPath($view){
         
         $view= str_replace('.', '/', $view).'.blade.php';
         $path="resources/views/{$view}";

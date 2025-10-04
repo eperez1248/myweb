@@ -7,16 +7,16 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
               integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
               crossorigin="anonymous">
-        <title>Post</title>     
+        <title>Posts</title>     
     </head>
 
 
     <nav class="navbar navbar-expand-lg navbar-ligth bg-warning ">
         <div class="container-fluid"> 
-            <a class="navbar-brand h1" href="{{ route('posts.index')}}">Aplicacion Post</a>
+            <a class="navbar-brand h1" href={{ route('posts.index')}}>Aplicacion Post</a>
             <div class="justify-end">
                 <div class="col">
-                    <a class="btn btn-sm btn-success"  href="{{ route ('posts.create')}}">Agregar Post</a>   
+                    <a class="btn btn-sm btn-success"  href={{ route ('posts.create')}}>Agregar Post</a>   
                 </div>
             </div>
         </div>

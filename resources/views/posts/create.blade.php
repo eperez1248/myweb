@@ -31,9 +31,9 @@
                         </div>  
                         <div class="form-group">
                             <label for="body">Cuerpo</label>
-                            <textarea type="text" class="form-control" name="body" id="body" required></textarea>
+                            <textarea class="form-control" name="body" id="body" rows="3" required></textarea>
                             <br><!-- comment -->
-                            <button type="submit" class="btn btn-primary">Añadir</button>
+                            <button type="submit" class="btn btn-primary">Añadir Post</button>
                         </div>
                     </form>
                 </div>
